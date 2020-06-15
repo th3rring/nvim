@@ -6,7 +6,7 @@
 
 The following will install this config if you have an existing config it will move it to `~/.config/nvim.old`
 
-This script only supports Mac, Ubuntu and Arch
+This script only supports Ubuntu.
 
 ```
 bash <(curl -s https://raw.githubusercontent.com/th3rring/nvim/master/utils/install.sh)
