@@ -130,14 +130,14 @@ installextrapackages() { \
 # Welcome
 echo 'Installing Nvim Mach 2'
 
+# Installing neovim from apt.
+sudo apt install neovim
+
 # install pip
 which pip3 > /dev/null && echo "pip installed, moving on..." || asktoinstallpip
 
 # install node and neovim support
 which node > /dev/null && echo "node installed, moving on..." || asktoinstallnode
-
-# Installing neovim from apt.
-sudo apt install neovim
 
 # install pynvim
 pip3 list | grep pynvim > /dev/null && echo "pynvim installed, moving on..." || installpynvim
