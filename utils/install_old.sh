@@ -23,6 +23,7 @@ installnode() { \
   [  -n "$(uname -a | grep Ubuntu)" ] && installnodeubuntu
   [ -f "/etc/arch-release" ] && installnodearch
   [ "$(expr substr $(uname -s) 1 10)" == "MINGW64_NT" ] && echo "Windows not currently supported"
+  # Didn't work on VM install. Going to add a sudo apt call
   sudo npm i -g neovim
 }
 
@@ -45,7 +46,7 @@ installpip() { \
   [ "$(uname)" == "Darwin" ] && installpiponmac
   [  -n "$(uname -a | grep Ubuntu)" ] && installpiponubuntu
   [ -f "/etc/arch-release" ] && installpiponarch
-  [ "$(expr substr $(uname -s) 1 10)" == "MINGW64_NT" ] && echo "Windows not currently supported"
+  [ "$(expr substr $(uname -s) 1 10)" == "MINGW64_NT" ] && echo "Windows not currently supported"Type Something 
 }
 
 installpynvim() { \
@@ -76,8 +77,7 @@ moveoldnvim() { \
 installplugins() { \
   mv $HOME/.config/nvim/init.vim $HOME/.config/nvim/init.vim.tmp
   mv $HOME/.config/nvim/utils/init.vim $HOME/.config/nvim/init.vim
-  echo "Installing plugins..."
-  nvim --headless +PlugInstall +qall > /dev/null 2>&1
+  echo "Installing plugins..." nvim --headless +PlugInstall +qall > /dev/null 2>&1
   mv $HOME/.config/nvim/init.vim $HOME/.config/nvim/utils/init.vim
   mv $HOME/.config/nvim/init.vim.tmp $HOME/.config/nvim/init.vim
 }
@@ -135,7 +135,6 @@ which pip3 > /dev/null && echo "pip installed, moving on..." || asktoinstallpip
 
 # install node and neovim support
 which node > /dev/null && echo "node installed, moving on..." || asktoinstallnode
-
 
 # install pynvim
 pip3 list | grep pynvim > /dev/null && echo "pynvim installed, moving on..." || installpynvim
