@@ -24,7 +24,7 @@ installnode() { \
   [ -f "/etc/arch-release" ] && installnodearch
   [ "$(expr substr $(uname -s) 1 10)" == "MINGW64_NT" ] && echo "Windows not currently supported"
   # Didn't work on VM install. Going to add a sudo apt call
-  # sudo npm i -g neovim
+  sudo npm i -g neovim
 }
 
 installpiponmac() { \
@@ -129,9 +129,6 @@ installextrapackages() { \
 
 # Welcome
 echo 'Installing Nvim Mach 2'
-
-# Installing neovim from apt.
-sudo apt install neovim
 
 # install pip
 which pip3 > /dev/null && echo "pip installed, moving on..." || asktoinstallpip
