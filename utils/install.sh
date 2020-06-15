@@ -10,6 +10,7 @@ installnodemac() { \
 installnodeubuntu() { \
   sudo apt install nodejs
   sudo apt install npm
+  sudo apt install neovim
 }
 
 installnodearch() { \
@@ -23,7 +24,8 @@ installnode() { \
   [  -n "$(uname -a | grep Ubuntu)" ] && installnodeubuntu
   [ -f "/etc/arch-release" ] && installnodearch
   [ "$(expr substr $(uname -s) 1 10)" == "MINGW64_NT" ] && echo "Windows not currently supported"
-  sudo npm i -g neovim
+  # Didn't work on VM install. Going to add a sudo apt call
+  # sudo npm i -g neovim
 }
 
 installpiponmac() { \
