@@ -13,14 +13,14 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   " Convert binary, hex, etc..
   Plug 'glts/vim-radical'
   " Files
-  Plug 'tpope/vim-eunuch'
+  " Plug 'tpope/vim-eunuch'
   " Repeat stuff
   Plug 'tpope/vim-repeat'
   " Surround
   Plug 'tpope/vim-surround'
   " Better Comments
   Plug 'tpope/vim-commentary'
-  " Plug 'preservim/nerdcommenter'
+  Plug 'preservim/nerdcommenter'
   " Have the file system follow you around
   Plug 'airblade/vim-rooter'
   " auto set indent settings
@@ -67,9 +67,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Git
     " Plug 'mhinz/vim-signify'
     Plug 'airblade/vim-gitgutter'
-    Plug 'tpope/vim-fugitive'
-    Plug 'tpope/vim-rhubarb'
-    Plug 'junegunn/gv.vim'
+    " Plug 'tpope/vim-fugitive'
+    " Plug 'tpope/vim-rhubarb'
+    " Plug 'junegunn/gv.vim'
     " Terminal
     Plug 'voldikss/vim-floaterm'
     " Start Screen
