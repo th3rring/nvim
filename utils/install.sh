@@ -109,6 +109,9 @@ pipinstallueberzug() { \
 installonubuntu() { \
   sudo apt install ripgrep fzf ranger  
   sudo apt install libjpeg8-dev zlib1g-dev python-dev python3-dev libxtst-dev
+  sudo npm i -g bash-language-server
+  pip3 install jedi
+  pip3 install yapf
   pip3 install ueberzug
   pip3 install neovim-remote
 }
