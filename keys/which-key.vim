@@ -26,7 +26,7 @@ autocmd  FileType which_key set laststatus=0 noshowmode noruler
 
 
 " Single mappings
-let g:which_key_map['/'] = [ ':Commentary'  , 'comment' ]
+let g:which_key_map['/'] = [ ':Commentary'                , 'comment' ]
 let g:which_key_map['.'] = [ ':e $MYVIMRC'                , 'open init' ]
 let g:which_key_map[';'] = [ ':Commands'                  , 'commands' ]
 let g:which_key_map['='] = [ '<C-W>='                     , 'balance windows' ]
@@ -159,8 +159,8 @@ let g:which_key_map.l = {
       \ 'q' : ['<Plug>(coc-fix-current)'             , 'quickfix'],
       \ 'r' : ['<Plug>(coc-rename)'                  , 'rename'],
       \ 'R' : ['<Plug>(coc-references)'              , 'references'],
-      \ 's' : [':CocList -I symbols'                 , 'references'],
-      \ 'S' : [':CocList snippets'                   , 'snippets'],
+      \ 'S' : [':CocList -I symbols'                 , 'references'],
+      \ 's' : [':CocList snippets'                   , 'snippets'],
       \ 't' : ['<Plug>(coc-type-definition)'         , 'type definition'],
       \ 'u' : [':CocListResume'                      , 'resume list'],
       \ 'U' : [':CocUpdate'                          , 'update CoC'],
