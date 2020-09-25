@@ -14,12 +14,14 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   " Plug 'glts/vim-radical'
   " Files
   " Plug 'tpope/vim-eunuch'
+  " Hardmode
+  Plug 'takac/vim-hardtime'
   " Repeat stuff
   Plug 'tpope/vim-repeat'
   " Surround
   Plug 'tpope/vim-surround'
   " Better Comments
-  Plug 'tpope/vim-commentary'
+   Plug 'tpope/vim-commentary'
   Plug 'preservim/nerdcommenter'
   " Have the file system follow you around
   Plug 'airblade/vim-rooter'
