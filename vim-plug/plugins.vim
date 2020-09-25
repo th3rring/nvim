@@ -9,9 +9,9 @@ endif
 call plug#begin('~/.config/nvim/autoload/plugged')
 
   " Change dates fast
-  Plug 'tpope/vim-speeddating'
+  " Plug 'tpope/vim-speeddating'
   " Convert binary, hex, etc..
-  Plug 'glts/vim-radical'
+  " Plug 'glts/vim-radical'
   " Files
   " Plug 'tpope/vim-eunuch'
   " Repeat stuff
@@ -39,7 +39,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'norcalli/nvim-colorizer.lua'
     Plug 'junegunn/rainbow_parentheses.vim'
     " Better Syntax Support
-    " Plug 'sheerun/vim-polyglot'
+    Plug 'sheerun/vim-polyglot'
     " Cool Icons
     Plug 'ryanoasis/vim-devicons'
     " Auto pairs for '(' '[' '{' 
@@ -79,9 +79,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " See what keys do like in emacs
     Plug 'liuchengxu/vim-which-key'
     " Zen mode
-    Plug 'junegunn/goyo.vim'
+    " Plug 'junegunn/goyo.vim'
     " Making stuff
-    Plug 'neomake/neomake'
+    " Plug 'neomake/neomake'
     " Snippets
     Plug 'honza/vim-snippets'
     Plug 'mattn/emmet-vim'
@@ -93,6 +93,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'ChristianChiarulli/codi.vim'
     " Vim Wiki
     " Plug 'https://github.com/vimwiki/vimwiki.git'
+    " C++ Better Highlighting
+    " Plug 'jackguo380/vim-lsp-cxx-highlight'
   endif
 
 
