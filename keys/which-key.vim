@@ -8,6 +8,8 @@ let g:which_key_map =  {}
 let g:which_key_sep = '→'
 " set timeoutlen=100
 
+" Use space to exit as well
+let g:which_key_exit = "\<Space>"
 
 " Not a fan of floating windows for this
 let g:which_key_use_floating_win = 0
@@ -32,6 +34,7 @@ let g:which_key_map[','] = [ 'Startify'                   , 'start screen' ]
 let g:which_key_map['c'] = [ ':Codi!!'                    , 'virtual repl']
 let g:which_key_map['d'] = [ ':bd'                        , 'delete buffer']
 let g:which_key_map['e'] = [ ':CocCommand explorer'       , 'explorer' ]
+let g:which_key_map['v'] = [':Vista!!'                    , 'tag viewer']
 let g:which_key_map['f'] = [ ':Files'                     , 'search files' ]
 let g:which_key_map['h'] = [ '<C-W>s'                     , 'split below']
 let g:which_key_map['q'] = [ 'q'                          , 'quit' ]
@@ -39,8 +42,8 @@ let g:which_key_map['r'] = [ ':RnvimrToggle'              , 'ranger' ]
 let g:which_key_map['S'] = [ ':SSave'                     , 'save session' ]
 let g:which_key_map['T'] = [ ':Rg'                        , 'search text' ]
 let g:which_key_map['v'] = [ '<C-W>v'                     , 'split right']
-let g:which_key_map['W'] = [ 'w'                          , 'write' ]
-let g:which_key_map['z'] = [ 'Goyo'                       , 'zen' ]
+let g:which_key_map['w'] = [ 'w'                          , 'write' ]
+" let g:which_key_map['z'] = [ 'Goyo'                       , 'zen' ]
 
 " Group mappings
 
@@ -48,13 +51,13 @@ let g:which_key_map['z'] = [ 'Goyo'                       , 'zen' ]
 let g:which_key_map.a = {
       \ 'name' : '+actions' ,
       \ 'c' : [':ColorizerToggle'        , 'colorizer'],
-      \ 'e' : [':CocCommand explorer'    , 'explorer'],
-      \ 'n' : [':set nonumber!'          , 'line-numbers'],
       \ 'r' : [':set norelativenumber!'  , 'relative line nums'],
       \ 's' : [':let @/ = ""'            , 'remove search highlight'],
       \ 't' : [':FloatermToggle'         , 'terminal'],
       \ 'v' : [':Vista!!'                , 'tag viewer'],
       \ }
+      " \ 'e' : [':CocCommand explorer'    , 'explorer'],
+      " \ 'n' : [':set nonumber!'          , 'line-numbers'],
 
 " b is for buffer
 let g:which_key_map.b = {
@@ -183,25 +186,25 @@ let g:which_key_map.t = {
       \ }
 
 " w is for wiki
-let g:which_key_map.w = {
-      \ 'name' : '+wiki' ,
-      \ 'w' : ['<Plug>VimwikiIndex'                              , 'ncdu'],
-      \ 'n' : ['<plug>(wiki-open)'                              , 'ncdu'],
-      \ 'j' : ['<plug>(wiki-journal)'                              , 'ncdu'],
-      \ 'R' : ['<plug>(wiki-reload)'                              , 'ncdu'],
-      \ 'c' : ['<plug>(wiki-code-run)'                              , 'ncdu'],
-      \ 'b' : ['<plug>(wiki-graph-find-backlinks)'                              , 'ncdu'],
-      \ 'g' : ['<plug>(wiki-graph-in)'                              , 'ncdu'],
-      \ 'G' : ['<plug>(wiki-graph-out)'                              , 'ncdu'],
-      \ 'l' : ['<plug>(wiki-link-toggle)'                              , 'ncdu'],
-      \ 'd' : ['<plug>(wiki-page-delete)'                              , 'ncdu'],
-      \ 'r' : ['<plug>(wiki-page-rename)'                              , 'ncdu'],
-      \ 't' : ['<plug>(wiki-page-toc)'                              , 'ncdu'],
-      \ 'T' : ['<plug>(wiki-page-toc-local)'                              , 'ncdu'],
-      \ 'e' : ['<plug>(wiki-export)'                              , 'ncdu'],
-      \ 'u' : ['<plug>(wiki-list-uniq)'                              , 'ncdu'],
-      \ 'U' : ['<plug>(wiki-list-uniq-local)'                              , 'ncdu'],
-      \ }
+" let g:which_key_map.w = {
+"       \ 'name' : '+wiki' ,
+"       \ 'w' : ['<Plug>VimwikiIndex'                              , 'ncdu'],
+"       \ 'n' : ['<plug>(wiki-open)'                              , 'ncdu'],
+"       \ 'j' : ['<plug>(wiki-journal)'                              , 'ncdu'],
+"       \ 'R' : ['<plug>(wiki-reload)'                              , 'ncdu'],
+"       \ 'c' : ['<plug>(wiki-code-run)'                              , 'ncdu'],
+"       \ 'b' : ['<plug>(wiki-graph-find-backlinks)'                              , 'ncdu'],
+"       \ 'g' : ['<plug>(wiki-graph-in)'                              , 'ncdu'],
+"       \ 'G' : ['<plug>(wiki-graph-out)'                              , 'ncdu'],
+"       \ 'l' : ['<plug>(wiki-link-toggle)'                              , 'ncdu'],
+"       \ 'd' : ['<plug>(wiki-page-delete)'                              , 'ncdu'],
+"       \ 'r' : ['<plug>(wiki-page-rename)'                              , 'ncdu'],
+"       \ 't' : ['<plug>(wiki-page-toc)'                              , 'ncdu'],
+"       \ 'T' : ['<plug>(wiki-page-toc-local)'                              , 'ncdu'],
+"       \ 'e' : ['<plug>(wiki-export)'                              , 'ncdu'],
+"       \ 'u' : ['<plug>(wiki-list-uniq)'                              , 'ncdu'],
+"       \ 'U' : ['<plug>(wiki-list-uniq-local)'                              , 'ncdu'],
+"       \ }
 
 " Global
 " <Plug>VimwikiIndex
