@@ -75,7 +75,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Start Screen
     Plug 'mhinz/vim-startify'
     " Vista
-    Plug 'liuchengxu/vista.vim'
+    " Plug 'liuchengxu/vista.vim'
+    Plug 'preservim/tagbar'
     " See what keys do like in emacs
     Plug 'liuchengxu/vim-which-key'
     " Zen mode
@@ -83,6 +84,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Making stuff
     " Plug 'neomake/neomake'
     " Snippets
+
     Plug 'honza/vim-snippets'
     Plug 'mattn/emmet-vim'
     " Better Comments
