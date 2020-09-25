@@ -34,7 +34,8 @@
     "yaml",
     "json",
     "python",
-    "latex"
+    "latex",
+    "cpp"
   ],
   "coc.preferences.hoverTarget": "float",
 
