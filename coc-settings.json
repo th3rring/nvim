@@ -50,14 +50,16 @@
   //"python.jediPath": "~/.miniconda/envs/neovim/lib/python3.8/site-packages",
 
   // snippets
-  "snippets.ultisnips.directories": ["UltiSnips", "~/.config/nvim/snips"],
-  //"snippets.userSnippetsDirectory": "~/.config/nvim/snips",
+  //"snippets.ultisnips.directories": ["UltiSnips", "~/.config/nvim/snips"],
+  "snippets.userSnippetsDirectory": "~/.config/nvim/snips",
 
   // emmet
   "emmet.includeLanguages": {
     "vue-html": "html",
     "javascript": "javascriptreact"
   },
+
+  "clangd.disableDiagnostics": true,
 
   // explorer
   "explorer.width": 30,
