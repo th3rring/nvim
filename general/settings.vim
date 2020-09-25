@@ -33,7 +33,7 @@ if !exists('g:vscode')
   set shortmess+=c                        " Don't pass messages to |ins-completion-menu|.
   set signcolumn=yes                      " Always show the signcolumn, otherwise it would shift the text each time
   set updatetime=300                      " Faster completion
-  set timeoutlen=100                      " By default timeoutlen is 1000 ms
+  set timeoutlen=250                      " By default timeoutlen is 1000 ms. Brought up to 250 to keep Commentary working.
   set clipboard=unnamedplus               " Copy paste between vim and everything else
   set incsearch
   set guifont=Hack\ Nerd\ Font
