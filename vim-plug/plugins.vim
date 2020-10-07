@@ -87,7 +87,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Plug 'neomake/neomake'
     " Snippets
 
-    Plug 'honza/vim-snippets'
+    Plug 'th3rring/vim-snippets'
     Plug 'mattn/emmet-vim'
     " Better Comments
     " Plug 'jbgutierrez/vim-better-comments'
