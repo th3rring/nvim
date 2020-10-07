@@ -21,7 +21,7 @@
     \ 'coc-json',
     \ 'coc-marketplace',
     \ ]
-
+let g:snips_author = 'Therring'
 " Use tab for trigger completion with characters ahead and navigate.
 inoremap <silent><expr> <TAB>
       \ pumvisible() ? "\<C-n>" :
