@@ -15,7 +15,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   " Files
   " Plug 'tpope/vim-eunuch'
   " Hardmode
-  Plug 'takac/vim-hardtime'
+  " Plug 'takac/vim-hardtime'
   " Repeat stuff
   Plug 'tpope/vim-repeat'
   " Surround
@@ -94,7 +94,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Echo doc
     " Plug 'Shougo/echodoc.vim'
     " Interactive code
-    Plug 'ChristianChiarulli/codi.vim'
+    " Plug 'ChristianChiarulli/codi.vim'
     " Vim Wiki
     " Plug 'https://github.com/vimwiki/vimwiki.git'
     " C++ Better Highlighting

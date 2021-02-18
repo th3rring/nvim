@@ -31,6 +31,7 @@ function! StartifyEntryFormat()
 
 let g:startify_bookmarks = [
             \ { 'w': '~/Workspace'},
+            \ { 'r': '~/Workspace/rb_ws/src/' },
             \ { 'c': '~/.config/dotfiles' },
             \ { 'i': '~/.config/nvim/init.vim' },
             \ { 's': '~/.config/dotfiles/suckless' },

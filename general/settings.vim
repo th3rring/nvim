@@ -26,6 +26,7 @@ if !exists('g:vscode')
   set relativenumber                      " Set relative line numbers
   set cursorline                          " Enable highlighting of the current line
   set background=dark                     " tell vim what the background color looks like
+  " set termguicolors
   set showtabline=2                       " Always show tabs 
   set noshowmode                          " We don't need to see things like -- INSERT -- anymore
   set nobackup                            " This is recommended by coc
